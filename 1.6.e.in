@@ -12,8 +12,8 @@ States:
     A, S
     B
     C
-    D
-    E, F
+    D, F
+    E
     F, F
 End
 #
@@ -21,15 +21,16 @@ End
 #
 Transitions:
    A, 0, B
-   A, 1, A
-   B, 0, A
+   A, 1, E
+   B, 0, C
    B, 1, C
    C, 0, D
-   C, 1, A
-   D, 0, A
-   D, 1, E
+   C, 1, D
+   D, 0, C
+   D, 1, C
+   A, 1, E
    E, 0, F
    E, 1, F
-   F, 0, F
-   F, 1, F
+   F, 0, E
+   F, 1, E
 End

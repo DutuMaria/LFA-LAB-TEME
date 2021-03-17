@@ -80,6 +80,9 @@ with open(sys.argv[1]) as f:
             if state.split(", ")[2] == "F":
                 stari_finale.append(state.split(", ")[0])
                 States[States.index(state)] = state.split(", ")[0]
+            if state.split(", ")[2] == "S":
+                stare_init.append(state.split(", ")[0])
+                States[States.index(state)] = state.split(", ")[0]
         except:
             continue
 
@@ -99,11 +102,11 @@ with open(sys.argv[1]) as f:
     #         print(f"Tranziția {transition} {validator(index_Transitions, transition[0], transition[1], transition[2])}")
     #     index_Transitions += 1
 
-print(stare_init)
-print(stari_finale)
-print(f"Sigma: {Sigma}")
-print(f"States: {States}")
-print(f"Transitions: {Transitions}")
+# print(stare_init)
+# print(stari_finale)
+# print(f"Sigma: {Sigma}")
+# print(f"States: {States}")
+# print(f"Transitions: {Transitions}")
 
 
 def verificare(cuvant):

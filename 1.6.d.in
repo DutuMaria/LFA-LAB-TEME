@@ -12,24 +12,17 @@ States:
     A, S
     B
     C
-    D
-    E, F
-    F, F
+    D, F
 End
 #
 # comment l i n e s ( s k i p them )
 #
 Transitions:
    A, 0, B
-   A, 1, A
-   B, 0, A
+   A, 1, B
+   B, 0, C
    B, 1, C
    C, 0, D
-   C, 1, A
-   D, 0, A
-   D, 1, E
-   E, 0, F
-   E, 1, F
-   F, 0, F
-   F, 1, F
+   D, 0, D
+   D, 1, D
 End
