@@ -16,6 +16,5 @@ End
 # comment l i n e s ( s k i p them )
 #
 Transitions:
-   A, "", A
    A, 0, B
 End
